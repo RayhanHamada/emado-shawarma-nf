@@ -15,16 +15,18 @@ namespace emado_shawarma_nf
         public TambahUpdateForm()
         {
             InitializeComponent();
+
             k = new Karyawan();
             tambah = true;
             InitializeCustom();
-            btn_update_tambah.Text = "Tambah Karyawan";
+            BtnUpdateTambah.Text = "Tambah Karyawan";
         }
 
         //untuk update karyawan
         public TambahUpdateForm(long id)
         {
             InitializeComponent();
+
             k = Koneksi.GetKaryawan(id);
             if (k.Equals(null))
             {
@@ -34,14 +36,13 @@ namespace emado_shawarma_nf
             namaSebelum = k.Nama;
             tambah = false;
             InitializeCustom();
-            btn_update_tambah.Text = "Update Karyawan";
+            BtnUpdateTambah.Text = "Update Karyawan";
             PopulateForm(k);
         }
 
         private void InitializeCustom()
         {
-            dt_tgl_lahir.CustomFormat = "dd-MM-yyyy";
-            FormClosed += TambahUpdateForm_FormClosed;
+            DtTglLahir.CustomFormat = "dd-MM-yyyy";
         }
 
         private void TambahUpdateForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -49,25 +50,25 @@ namespace emado_shawarma_nf
             Dispose();
         }
 
-        private void btn_update_tambah_Click(object sender, EventArgs e)
+        private void BtnUpdate_tambah_Click(object sender, EventArgs e)
         {
-            if (txt_nama.Text == ""
-                || cb_golongan.Text == ""
-                || cb_jabatan.Text == ""
-                || cb_departemen.Text == "")
+            if (TxtNama.Text == ""
+                || CbGolongan.Text == ""
+                || CbJabatan.Text == ""
+                || CbDepartemen.Text == "")
             {
                 MessageBox.Show("Kolom Nama, Golongan, Jabatan dan Departemen tidak boleh kosong", "Kesalahan Input");
                 return;
             }
 
-            k.Nama = txt_nama.Text;
-            k.Golongan = cb_golongan.Text;
-            k.Jabatan = cb_jabatan.Text;
-            k.Departemen = cb_departemen.Text;
+            k.Nama = TxtNama.Text;
+            k.Golongan = CbGolongan.Text;
+            k.Jabatan = CbJabatan.Text;
+            k.Departemen = CbDepartemen.Text;
 
             try
             {
-                k.Gaji = decimal.Parse(txt_gaji.Text);
+                k.Gaji = decimal.Parse(TxtGaji.Text);
             }
             catch
             {
@@ -76,26 +77,26 @@ namespace emado_shawarma_nf
 
             try
             {
-                k.Tunjangan = decimal.Parse(txt_tunjangan.Text);
+                k.Tunjangan = decimal.Parse(TxtTunjangan.Text);
             }
             catch
             {
                 k.Tunjangan = 0;
             }
 
-            k.TglLahir = dt_tgl_lahir.Value;
-            k.JenisKelamin = cb_jk.Text;
-            k.Alamat = rtb_alamat.Text;
+            k.TglLahir = DtTglLahir.Value;
+            k.JenisKelamin = CbJK.Text;
+            k.Alamat = RtbAlamat.Text;
 
-            k.Norek = txt_norek.Text;
+            k.Norek = TxtNorek.Text;
 
-            k.NPWP = txt_npwp.Text;
-            k.BPJS = txt_bpjs.Text;
-            k.Lokasi = txt_lokasi.Text;
+            k.NPWP = TxtNPWP.Text;
+            k.BPJS = TxtBPJS.Text;
+            k.Lokasi = TxtLokasi.Text;
 
-            if (pb_foto.ImageLocation != null)
+            if (PbFoto.ImageLocation != null)
             {
-                k.UrlFoto = pb_foto.ImageLocation;
+                k.UrlFoto = PbFoto.ImageLocation;
             }
             else
             {
@@ -128,92 +129,93 @@ namespace emado_shawarma_nf
 
         private void PopulateForm(Karyawan k)
         {
-            txt_nama.Text = k.Nama;
-            cb_golongan.Text = k.Golongan;
-            cb_jabatan.Text = k.Jabatan;
-            cb_departemen.Text = k.Departemen;
-            txt_gaji.Text = k.Gaji.ToString();
-            txt_tunjangan.Text = k.Tunjangan.ToString();
-            dt_tgl_lahir.Value = k.TglLahir;
-            cb_jk.Text = k.JenisKelamin;
-            rtb_alamat.Text = k.Alamat;
-            txt_norek.Text = k.Norek;
-            txt_npwp.Text = k.NPWP;
-            txt_bpjs.Text = k.BPJS;
-            txt_lokasi.Text = k.Lokasi;
-            pb_foto.ImageLocation = k.UrlFoto;
+            TxtNama.Text = k.Nama;
+            CbGolongan.Text = k.Golongan;
+            CbJabatan.Text = k.Jabatan;
+            CbDepartemen.Text = k.Departemen;
+            TxtGaji.Text = k.Gaji.ToString();
+            TxtTunjangan.Text = k.Tunjangan.ToString();
+            DtTglLahir.Value = k.TglLahir;
+            CbJK.Text = k.JenisKelamin;
+            RtbAlamat.Text = k.Alamat;
+            TxtNorek.Text = k.Norek;
+            TxtNPWP.Text = k.NPWP;
+            TxtBPJS.Text = k.BPJS;
+            TxtLokasi.Text = k.Lokasi;
+            PbFoto.ImageLocation = k.UrlFoto;
         }
 
-        private void btn_upload_foto_Click(object sender, EventArgs e)
+        private void BtnUploadFoto_Click(object sender, EventArgs e)
         {
-            FileDialog dialog = new OpenFileDialog();
-            var res = dialog.ShowDialog();
+            var dialog = new OpenFileDialog();
+            DialogResult res = dialog.ShowDialog();
+
             if (res == DialogResult.OK || res == DialogResult.Yes)
             {
-                pb_foto.ImageLocation = dialog.FileName;
+                PbFoto.ImageLocation = dialog.FileName;
             }
         }
 
-        private void btn_reset_form_Click(object sender, EventArgs e)
+        private void BtnResetForm_Click(object sender, EventArgs e)
         {
-            txt_nama.Text = "";
-            cb_golongan.Text = "";
-            cb_jabatan.Text = "";
-            cb_departemen.Text = "";
-            txt_gaji.Text = "";
-            txt_tunjangan.Text = "";
-            dt_tgl_lahir.Value = DateTime.Now;
-            cb_jk.Text = "";
-            rtb_alamat.Text = "";
-            txt_norek.Text = "";
-            txt_npwp.Text = "";
-            txt_bpjs.Text = "";
-            txt_lokasi.Text = "";
-            pb_foto.ImageLocation = "";
+            TxtNama.Text = "";
+            CbGolongan.Text = "";
+            CbJabatan.Text = "";
+            CbDepartemen.Text = "";
+            TxtGaji.Text = "";
+            TxtTunjangan.Text = "";
+            DtTglLahir.Value = DateTime.Now;
+            CbJK.Text = "";
+            RtbAlamat.Text = "";
+            TxtNorek.Text = "";
+            TxtNPWP.Text = "";
+            TxtBPJS.Text = "";
+            TxtLokasi.Text = "";
+            PbFoto.ImageLocation = "";
         }
 
-        private void txt_gaji_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-        }
-
-        private void txt_tunjangan_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtGaji_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
-        private void txt_gaji_TextChanged(object sender, EventArgs e)
+        private void TxtTunjangan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void TxtGaji_TextChanged(object sender, EventArgs e)
         {
             decimal gaji;
 
             try
             {
-                gaji = decimal.Parse(txt_gaji.Text);
+                gaji = decimal.Parse(TxtGaji.Text);
             }
             catch
             {
                 gaji = 0;
             }
 
-            lbl_rpGaji.Text = string.Format(
+            LblRpGaji.Text = string.Format(
                 System.Globalization.CultureInfo.GetCultureInfo("id-ID"),
                 "{0:C}", gaji);
         }
 
-        private void txt_tunjangan_TextChanged(object sender, EventArgs e)
+        private void TxtTunjangan_TextChanged(object sender, EventArgs e)
         {
             decimal tunjangan;
 
             try
             {
-                tunjangan = decimal.Parse(txt_tunjangan.Text);
+                tunjangan = decimal.Parse(TxtTunjangan.Text);
             }
             catch
             {
                 tunjangan = 0;
             }
 
-            lbl_rpTunjangan.Text = string.Format(
+            LblRpTunjangan.Text = string.Format(
                 System.Globalization.CultureInfo.GetCultureInfo("id-ID"),
                 "{0:C}", tunjangan);
         }

@@ -29,374 +29,375 @@ namespace emado_shawarma_nf
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_nama = new System.Windows.Forms.Label();
-            this.lbl_golongan = new System.Windows.Forms.Label();
-            this.lbl_jabatan = new System.Windows.Forms.Label();
-            this.lbl_departemen = new System.Windows.Forms.Label();
-            this.lbl_gaji = new System.Windows.Forms.Label();
-            this.lbl_tunjangan = new System.Windows.Forms.Label();
-            this.lbl_tgl_lahir = new System.Windows.Forms.Label();
-            this.lbl_jk = new System.Windows.Forms.Label();
-            this.lbl_alamat = new System.Windows.Forms.Label();
-            this.lbl_norek = new System.Windows.Forms.Label();
-            this.lbl_npwp = new System.Windows.Forms.Label();
-            this.lbl_bpjs = new System.Windows.Forms.Label();
-            this.lbl_lokasi = new System.Windows.Forms.Label();
-            this.txt_nama = new System.Windows.Forms.TextBox();
-            this.txt_gaji = new System.Windows.Forms.TextBox();
-            this.txt_norek = new System.Windows.Forms.TextBox();
-            this.cb_golongan = new System.Windows.Forms.ComboBox();
-            this.cb_jabatan = new System.Windows.Forms.ComboBox();
-            this.cb_departemen = new System.Windows.Forms.ComboBox();
-            this.cb_jk = new System.Windows.Forms.ComboBox();
-            this.txt_npwp = new System.Windows.Forms.TextBox();
-            this.txt_bpjs = new System.Windows.Forms.TextBox();
-            this.txt_lokasi = new System.Windows.Forms.TextBox();
-            this.rtb_alamat = new System.Windows.Forms.RichTextBox();
-            this.pb_foto = new System.Windows.Forms.PictureBox();
-            this.btn_upload_foto = new System.Windows.Forms.Button();
-            this.txt_tunjangan = new System.Windows.Forms.TextBox();
-            this.dt_tgl_lahir = new System.Windows.Forms.DateTimePicker();
-            this.btn_update_tambah = new System.Windows.Forms.Button();
-            this.btn_reset_form = new System.Windows.Forms.Button();
-            this.lbl_rpGaji = new System.Windows.Forms.Label();
-            this.lbl_rpTunjangan = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
+            this.LblNama = new System.Windows.Forms.Label();
+            this.LblGolongan = new System.Windows.Forms.Label();
+            this.LblJabatan = new System.Windows.Forms.Label();
+            this.LblDepartemen = new System.Windows.Forms.Label();
+            this.LblGaji = new System.Windows.Forms.Label();
+            this.LblTunjangan = new System.Windows.Forms.Label();
+            this.LblTglLahir = new System.Windows.Forms.Label();
+            this.LblJk = new System.Windows.Forms.Label();
+            this.LblAlamat = new System.Windows.Forms.Label();
+            this.LblNorek = new System.Windows.Forms.Label();
+            this.LblNPWP = new System.Windows.Forms.Label();
+            this.LblBPJS = new System.Windows.Forms.Label();
+            this.LblLokasi = new System.Windows.Forms.Label();
+            this.TxtNama = new System.Windows.Forms.TextBox();
+            this.TxtGaji = new System.Windows.Forms.TextBox();
+            this.TxtNorek = new System.Windows.Forms.TextBox();
+            this.CbGolongan = new System.Windows.Forms.ComboBox();
+            this.CbJabatan = new System.Windows.Forms.ComboBox();
+            this.CbDepartemen = new System.Windows.Forms.ComboBox();
+            this.CbJK = new System.Windows.Forms.ComboBox();
+            this.TxtNPWP = new System.Windows.Forms.TextBox();
+            this.TxtBPJS = new System.Windows.Forms.TextBox();
+            this.TxtLokasi = new System.Windows.Forms.TextBox();
+            this.RtbAlamat = new System.Windows.Forms.RichTextBox();
+            this.PbFoto = new System.Windows.Forms.PictureBox();
+            this.BtnUploadFoto = new System.Windows.Forms.Button();
+            this.TxtTunjangan = new System.Windows.Forms.TextBox();
+            this.DtTglLahir = new System.Windows.Forms.DateTimePicker();
+            this.BtnUpdateTambah = new System.Windows.Forms.Button();
+            this.BtnResetForm = new System.Windows.Forms.Button();
+            this.LblRpGaji = new System.Windows.Forms.Label();
+            this.LblRpTunjangan = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.PbFoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbl_nama
+            // LblNama
             // 
-            this.lbl_nama.AutoSize = true;
-            this.lbl_nama.Location = new System.Drawing.Point(44, 38);
-            this.lbl_nama.Name = "lbl_nama";
-            this.lbl_nama.Size = new System.Drawing.Size(45, 17);
-            this.lbl_nama.TabIndex = 0;
-            this.lbl_nama.Text = "Nama";
+            this.LblNama.AutoSize = true;
+            this.LblNama.Location = new System.Drawing.Point(44, 38);
+            this.LblNama.Name = "LblNama";
+            this.LblNama.Size = new System.Drawing.Size(45, 17);
+            this.LblNama.TabIndex = 0;
+            this.LblNama.Text = "Nama";
             // 
-            // lbl_golongan
+            // LblGolongan
             // 
-            this.lbl_golongan.AutoSize = true;
-            this.lbl_golongan.Location = new System.Drawing.Point(44, 73);
-            this.lbl_golongan.Name = "lbl_golongan";
-            this.lbl_golongan.Size = new System.Drawing.Size(70, 17);
-            this.lbl_golongan.TabIndex = 100;
-            this.lbl_golongan.Text = "Golongan";
+            this.LblGolongan.AutoSize = true;
+            this.LblGolongan.Location = new System.Drawing.Point(44, 73);
+            this.LblGolongan.Name = "LblGolongan";
+            this.LblGolongan.Size = new System.Drawing.Size(70, 17);
+            this.LblGolongan.TabIndex = 100;
+            this.LblGolongan.Text = "Golongan";
             // 
-            // lbl_jabatan
+            // LblJabatan
             // 
-            this.lbl_jabatan.AutoSize = true;
-            this.lbl_jabatan.Location = new System.Drawing.Point(44, 106);
-            this.lbl_jabatan.Name = "lbl_jabatan";
-            this.lbl_jabatan.Size = new System.Drawing.Size(59, 17);
-            this.lbl_jabatan.TabIndex = 213;
-            this.lbl_jabatan.Text = "Jabatan";
+            this.LblJabatan.AutoSize = true;
+            this.LblJabatan.Location = new System.Drawing.Point(44, 106);
+            this.LblJabatan.Name = "LblJabatan";
+            this.LblJabatan.Size = new System.Drawing.Size(59, 17);
+            this.LblJabatan.TabIndex = 213;
+            this.LblJabatan.Text = "Jabatan";
             // 
-            // lbl_departemen
+            // LblDepartemen
             // 
-            this.lbl_departemen.AutoSize = true;
-            this.lbl_departemen.Location = new System.Drawing.Point(44, 146);
-            this.lbl_departemen.Name = "lbl_departemen";
-            this.lbl_departemen.Size = new System.Drawing.Size(86, 17);
-            this.lbl_departemen.TabIndex = 312;
-            this.lbl_departemen.Text = "Departemen";
+            this.LblDepartemen.AutoSize = true;
+            this.LblDepartemen.Location = new System.Drawing.Point(44, 146);
+            this.LblDepartemen.Name = "LblDepartemen";
+            this.LblDepartemen.Size = new System.Drawing.Size(86, 17);
+            this.LblDepartemen.TabIndex = 312;
+            this.LblDepartemen.Text = "Departemen";
             // 
-            // lbl_gaji
+            // LblGaji
             // 
-            this.lbl_gaji.AutoSize = true;
-            this.lbl_gaji.Location = new System.Drawing.Point(44, 182);
-            this.lbl_gaji.Name = "lbl_gaji";
-            this.lbl_gaji.Size = new System.Drawing.Size(33, 17);
-            this.lbl_gaji.TabIndex = 42;
-            this.lbl_gaji.Text = "Gaji";
+            this.LblGaji.AutoSize = true;
+            this.LblGaji.Location = new System.Drawing.Point(44, 182);
+            this.LblGaji.Name = "LblGaji";
+            this.LblGaji.Size = new System.Drawing.Size(33, 17);
+            this.LblGaji.TabIndex = 42;
+            this.LblGaji.Text = "Gaji";
             // 
-            // lbl_tunjangan
+            // LblTunjangan
             // 
-            this.lbl_tunjangan.AutoSize = true;
-            this.lbl_tunjangan.Location = new System.Drawing.Point(43, 235);
-            this.lbl_tunjangan.Name = "lbl_tunjangan";
-            this.lbl_tunjangan.Size = new System.Drawing.Size(76, 17);
-            this.lbl_tunjangan.TabIndex = 53;
-            this.lbl_tunjangan.Text = "Tunjangan";
+            this.LblTunjangan.AutoSize = true;
+            this.LblTunjangan.Location = new System.Drawing.Point(43, 235);
+            this.LblTunjangan.Name = "LblTunjangan";
+            this.LblTunjangan.Size = new System.Drawing.Size(76, 17);
+            this.LblTunjangan.TabIndex = 53;
+            this.LblTunjangan.Text = "Tunjangan";
             // 
-            // lbl_tgl_lahir
+            // LblTglLahir
             // 
-            this.lbl_tgl_lahir.AutoSize = true;
-            this.lbl_tgl_lahir.Location = new System.Drawing.Point(44, 298);
-            this.lbl_tgl_lahir.Name = "lbl_tgl_lahir";
-            this.lbl_tgl_lahir.Size = new System.Drawing.Size(96, 17);
-            this.lbl_tgl_lahir.TabIndex = 64;
-            this.lbl_tgl_lahir.Text = "Tanggal Lahir";
+            this.LblTglLahir.AutoSize = true;
+            this.LblTglLahir.Location = new System.Drawing.Point(44, 298);
+            this.LblTglLahir.Name = "LblTglLahir";
+            this.LblTglLahir.Size = new System.Drawing.Size(96, 17);
+            this.LblTglLahir.TabIndex = 64;
+            this.LblTglLahir.Text = "Tanggal Lahir";
             // 
-            // lbl_jk
+            // LblJk
             // 
-            this.lbl_jk.AutoSize = true;
-            this.lbl_jk.Location = new System.Drawing.Point(43, 339);
-            this.lbl_jk.Name = "lbl_jk";
-            this.lbl_jk.Size = new System.Drawing.Size(95, 17);
-            this.lbl_jk.TabIndex = 75;
-            this.lbl_jk.Text = "Jenis Kelamin";
+            this.LblJk.AutoSize = true;
+            this.LblJk.Location = new System.Drawing.Point(43, 339);
+            this.LblJk.Name = "LblJk";
+            this.LblJk.Size = new System.Drawing.Size(95, 17);
+            this.LblJk.TabIndex = 75;
+            this.LblJk.Text = "Jenis Kelamin";
             // 
-            // lbl_alamat
+            // LblAlamat
             // 
-            this.lbl_alamat.AutoSize = true;
-            this.lbl_alamat.Location = new System.Drawing.Point(44, 374);
-            this.lbl_alamat.Name = "lbl_alamat";
-            this.lbl_alamat.Size = new System.Drawing.Size(51, 17);
-            this.lbl_alamat.TabIndex = 86;
-            this.lbl_alamat.Text = "Alamat";
+            this.LblAlamat.AutoSize = true;
+            this.LblAlamat.Location = new System.Drawing.Point(44, 374);
+            this.LblAlamat.Name = "LblAlamat";
+            this.LblAlamat.Size = new System.Drawing.Size(51, 17);
+            this.LblAlamat.TabIndex = 86;
+            this.LblAlamat.Text = "Alamat";
             // 
-            // lbl_norek
+            // LblNorek
             // 
-            this.lbl_norek.AutoSize = true;
-            this.lbl_norek.Location = new System.Drawing.Point(44, 448);
-            this.lbl_norek.Name = "lbl_norek";
-            this.lbl_norek.Size = new System.Drawing.Size(59, 17);
-            this.lbl_norek.TabIndex = 92;
-            this.lbl_norek.Text = "No. Rek";
+            this.LblNorek.AutoSize = true;
+            this.LblNorek.Location = new System.Drawing.Point(44, 448);
+            this.LblNorek.Name = "LblNorek";
+            this.LblNorek.Size = new System.Drawing.Size(59, 17);
+            this.LblNorek.TabIndex = 92;
+            this.LblNorek.Text = "No. Rek";
             // 
-            // lbl_npwp
+            // LblNPWP
             // 
-            this.lbl_npwp.AutoSize = true;
-            this.lbl_npwp.Location = new System.Drawing.Point(44, 478);
-            this.lbl_npwp.Name = "lbl_npwp";
-            this.lbl_npwp.Size = new System.Drawing.Size(49, 17);
-            this.lbl_npwp.TabIndex = 104;
-            this.lbl_npwp.Text = "NPWP";
+            this.LblNPWP.AutoSize = true;
+            this.LblNPWP.Location = new System.Drawing.Point(44, 478);
+            this.LblNPWP.Name = "LblNPWP";
+            this.LblNPWP.Size = new System.Drawing.Size(49, 17);
+            this.LblNPWP.TabIndex = 104;
+            this.LblNPWP.Text = "NPWP";
             // 
-            // lbl_bpjs
+            // LblBPJS
             // 
-            this.lbl_bpjs.AutoSize = true;
-            this.lbl_bpjs.Location = new System.Drawing.Point(44, 505);
-            this.lbl_bpjs.Name = "lbl_bpjs";
-            this.lbl_bpjs.Size = new System.Drawing.Size(68, 17);
-            this.lbl_bpjs.TabIndex = 115;
-            this.lbl_bpjs.Text = "No. BPJS";
+            this.LblBPJS.AutoSize = true;
+            this.LblBPJS.Location = new System.Drawing.Point(44, 505);
+            this.LblBPJS.Name = "LblBPJS";
+            this.LblBPJS.Size = new System.Drawing.Size(68, 17);
+            this.LblBPJS.TabIndex = 115;
+            this.LblBPJS.Text = "No. BPJS";
             // 
-            // lbl_lokasi
+            // LblLokasi
             // 
-            this.lbl_lokasi.AutoSize = true;
-            this.lbl_lokasi.Location = new System.Drawing.Point(44, 531);
-            this.lbl_lokasi.Name = "lbl_lokasi";
-            this.lbl_lokasi.Size = new System.Drawing.Size(49, 17);
-            this.lbl_lokasi.TabIndex = 121;
-            this.lbl_lokasi.Text = "Lokasi";
+            this.LblLokasi.AutoSize = true;
+            this.LblLokasi.Location = new System.Drawing.Point(44, 531);
+            this.LblLokasi.Name = "LblLokasi";
+            this.LblLokasi.Size = new System.Drawing.Size(49, 17);
+            this.LblLokasi.TabIndex = 121;
+            this.LblLokasi.Text = "Lokasi";
             // 
-            // txt_nama
+            // TxtNama
             // 
-            this.txt_nama.Location = new System.Drawing.Point(160, 38);
-            this.txt_nama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_nama.Name = "txt_nama";
-            this.txt_nama.Size = new System.Drawing.Size(296, 22);
-            this.txt_nama.TabIndex = 0;
+            this.TxtNama.Location = new System.Drawing.Point(160, 38);
+            this.TxtNama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtNama.Name = "TxtNama";
+            this.TxtNama.Size = new System.Drawing.Size(296, 22);
+            this.TxtNama.TabIndex = 0;
             // 
-            // txt_gaji
+            // TxtGaji
             // 
-            this.txt_gaji.Location = new System.Drawing.Point(160, 176);
-            this.txt_gaji.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_gaji.Name = "txt_gaji";
-            this.txt_gaji.Size = new System.Drawing.Size(296, 22);
-            this.txt_gaji.TabIndex = 5;
-            this.txt_gaji.TextChanged += new System.EventHandler(this.txt_gaji_TextChanged);
+            this.TxtGaji.Location = new System.Drawing.Point(160, 176);
+            this.TxtGaji.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtGaji.Name = "TxtGaji";
+            this.TxtGaji.Size = new System.Drawing.Size(296, 22);
+            this.TxtGaji.TabIndex = 5;
+            this.TxtGaji.TextChanged += new System.EventHandler(this.TxtGaji_TextChanged);
             // 
-            // txt_norek
+            // TxtNorek
             // 
-            this.txt_norek.Location = new System.Drawing.Point(159, 446);
-            this.txt_norek.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_norek.Name = "txt_norek";
-            this.txt_norek.Size = new System.Drawing.Size(296, 22);
-            this.txt_norek.TabIndex = 10;
+            this.TxtNorek.Location = new System.Drawing.Point(159, 446);
+            this.TxtNorek.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtNorek.Name = "TxtNorek";
+            this.TxtNorek.Size = new System.Drawing.Size(296, 22);
+            this.TxtNorek.TabIndex = 10;
             // 
-            // cb_golongan
+            // CbGolongan
             // 
-            this.cb_golongan.FormattingEnabled = true;
-            this.cb_golongan.Location = new System.Drawing.Point(160, 70);
-            this.cb_golongan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_golongan.Name = "cb_golongan";
-            this.cb_golongan.Size = new System.Drawing.Size(296, 24);
-            this.cb_golongan.TabIndex = 1;
+            this.CbGolongan.FormattingEnabled = true;
+            this.CbGolongan.Location = new System.Drawing.Point(160, 70);
+            this.CbGolongan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CbGolongan.Name = "CbGolongan";
+            this.CbGolongan.Size = new System.Drawing.Size(296, 24);
+            this.CbGolongan.TabIndex = 1;
             // 
-            // cb_jabatan
+            // CbJabatan
             // 
-            this.cb_jabatan.FormattingEnabled = true;
-            this.cb_jabatan.Location = new System.Drawing.Point(160, 106);
-            this.cb_jabatan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_jabatan.Name = "cb_jabatan";
-            this.cb_jabatan.Size = new System.Drawing.Size(296, 24);
-            this.cb_jabatan.TabIndex = 2;
+            this.CbJabatan.FormattingEnabled = true;
+            this.CbJabatan.Location = new System.Drawing.Point(160, 106);
+            this.CbJabatan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CbJabatan.Name = "CbJabatan";
+            this.CbJabatan.Size = new System.Drawing.Size(296, 24);
+            this.CbJabatan.TabIndex = 2;
             // 
-            // cb_departemen
+            // CbDepartemen
             // 
-            this.cb_departemen.FormattingEnabled = true;
-            this.cb_departemen.Location = new System.Drawing.Point(160, 143);
-            this.cb_departemen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_departemen.Name = "cb_departemen";
-            this.cb_departemen.Size = new System.Drawing.Size(296, 24);
-            this.cb_departemen.TabIndex = 3;
+            this.CbDepartemen.FormattingEnabled = true;
+            this.CbDepartemen.Location = new System.Drawing.Point(160, 143);
+            this.CbDepartemen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CbDepartemen.Name = "CbDepartemen";
+            this.CbDepartemen.Size = new System.Drawing.Size(296, 24);
+            this.CbDepartemen.TabIndex = 3;
             // 
-            // cb_jk
+            // CbJK
             // 
-            this.cb_jk.FormattingEnabled = true;
-            this.cb_jk.Items.AddRange(new object[] {
+            this.CbJK.FormattingEnabled = true;
+            this.CbJK.Items.AddRange(new object[] {
             "Pria",
             "Wanita"});
-            this.cb_jk.Location = new System.Drawing.Point(159, 339);
-            this.cb_jk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_jk.Name = "cb_jk";
-            this.cb_jk.Size = new System.Drawing.Size(296, 24);
-            this.cb_jk.TabIndex = 8;
+            this.CbJK.Location = new System.Drawing.Point(159, 339);
+            this.CbJK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CbJK.Name = "CbJK";
+            this.CbJK.Size = new System.Drawing.Size(296, 24);
+            this.CbJK.TabIndex = 8;
             // 
-            // txt_npwp
+            // TxtNPWP
             // 
-            this.txt_npwp.Location = new System.Drawing.Point(159, 476);
-            this.txt_npwp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_npwp.Name = "txt_npwp";
-            this.txt_npwp.Size = new System.Drawing.Size(296, 22);
-            this.txt_npwp.TabIndex = 11;
+            this.TxtNPWP.Location = new System.Drawing.Point(159, 476);
+            this.TxtNPWP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtNPWP.Name = "TxtNPWP";
+            this.TxtNPWP.Size = new System.Drawing.Size(296, 22);
+            this.TxtNPWP.TabIndex = 11;
             // 
-            // txt_bpjs
+            // TxtBPJS
             // 
-            this.txt_bpjs.Location = new System.Drawing.Point(159, 502);
-            this.txt_bpjs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_bpjs.Name = "txt_bpjs";
-            this.txt_bpjs.Size = new System.Drawing.Size(296, 22);
-            this.txt_bpjs.TabIndex = 12;
+            this.TxtBPJS.Location = new System.Drawing.Point(159, 502);
+            this.TxtBPJS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtBPJS.Name = "TxtBPJS";
+            this.TxtBPJS.Size = new System.Drawing.Size(296, 22);
+            this.TxtBPJS.TabIndex = 12;
             // 
-            // txt_lokasi
+            // TxtLokasi
             // 
-            this.txt_lokasi.Location = new System.Drawing.Point(159, 529);
-            this.txt_lokasi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_lokasi.Name = "txt_lokasi";
-            this.txt_lokasi.Size = new System.Drawing.Size(296, 22);
-            this.txt_lokasi.TabIndex = 13;
+            this.TxtLokasi.Location = new System.Drawing.Point(159, 529);
+            this.TxtLokasi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtLokasi.Name = "TxtLokasi";
+            this.TxtLokasi.Size = new System.Drawing.Size(296, 22);
+            this.TxtLokasi.TabIndex = 13;
             // 
-            // rtb_alamat
+            // RtbAlamat
             // 
-            this.rtb_alamat.Location = new System.Drawing.Point(159, 374);
-            this.rtb_alamat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtb_alamat.Name = "rtb_alamat";
-            this.rtb_alamat.Size = new System.Drawing.Size(296, 61);
-            this.rtb_alamat.TabIndex = 9;
-            this.rtb_alamat.Text = "";
+            this.RtbAlamat.Location = new System.Drawing.Point(159, 374);
+            this.RtbAlamat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RtbAlamat.Name = "RtbAlamat";
+            this.RtbAlamat.Size = new System.Drawing.Size(296, 61);
+            this.RtbAlamat.TabIndex = 9;
+            this.RtbAlamat.Text = "";
             // 
-            // pb_foto
+            // PbFoto
             // 
-            this.pb_foto.Location = new System.Drawing.Point(507, 38);
-            this.pb_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(167, 156);
-            this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_foto.TabIndex = 29;
-            this.pb_foto.TabStop = false;
+            this.PbFoto.Location = new System.Drawing.Point(507, 38);
+            this.PbFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PbFoto.Name = "PbFoto";
+            this.PbFoto.Size = new System.Drawing.Size(167, 156);
+            this.PbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PbFoto.TabIndex = 29;
+            this.PbFoto.TabStop = false;
             // 
-            // btn_upload_foto
+            // BtnUploadFoto
             // 
-            this.btn_upload_foto.Location = new System.Drawing.Point(507, 217);
-            this.btn_upload_foto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_upload_foto.Name = "btn_upload_foto";
-            this.btn_upload_foto.Size = new System.Drawing.Size(167, 23);
-            this.btn_upload_foto.TabIndex = 30;
-            this.btn_upload_foto.Text = "Upload/Update Foto";
-            this.btn_upload_foto.UseVisualStyleBackColor = true;
-            this.btn_upload_foto.Click += new System.EventHandler(this.btn_upload_foto_Click);
+            this.BtnUploadFoto.Location = new System.Drawing.Point(507, 217);
+            this.BtnUploadFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnUploadFoto.Name = "BtnUploadFoto";
+            this.BtnUploadFoto.Size = new System.Drawing.Size(167, 23);
+            this.BtnUploadFoto.TabIndex = 30;
+            this.BtnUploadFoto.Text = "Upload/Update Foto";
+            this.BtnUploadFoto.UseVisualStyleBackColor = true;
+            this.BtnUploadFoto.Click += new System.EventHandler(this.BtnUploadFoto_Click);
             // 
-            // txt_tunjangan
+            // TxtTunjangan
             // 
-            this.txt_tunjangan.Location = new System.Drawing.Point(160, 233);
-            this.txt_tunjangan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_tunjangan.Name = "txt_tunjangan";
-            this.txt_tunjangan.Size = new System.Drawing.Size(296, 22);
-            this.txt_tunjangan.TabIndex = 6;
-            this.txt_tunjangan.TextChanged += new System.EventHandler(this.txt_tunjangan_TextChanged);
+            this.TxtTunjangan.Location = new System.Drawing.Point(160, 233);
+            this.TxtTunjangan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtTunjangan.Name = "TxtTunjangan";
+            this.TxtTunjangan.Size = new System.Drawing.Size(296, 22);
+            this.TxtTunjangan.TabIndex = 6;
+            this.TxtTunjangan.TextChanged += new System.EventHandler(this.TxtTunjangan_TextChanged);
             // 
-            // dt_tgl_lahir
+            // DtTglLahir
             // 
-            this.dt_tgl_lahir.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_tgl_lahir.Location = new System.Drawing.Point(159, 294);
-            this.dt_tgl_lahir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dt_tgl_lahir.Name = "dt_tgl_lahir";
-            this.dt_tgl_lahir.Size = new System.Drawing.Size(296, 22);
-            this.dt_tgl_lahir.TabIndex = 7;
+            this.DtTglLahir.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtTglLahir.Location = new System.Drawing.Point(159, 294);
+            this.DtTglLahir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DtTglLahir.Name = "DtTglLahir";
+            this.DtTglLahir.Size = new System.Drawing.Size(296, 22);
+            this.DtTglLahir.TabIndex = 7;
             // 
-            // btn_update_tambah
+            // BtnUpdateTambah
             // 
-            this.btn_update_tambah.Location = new System.Drawing.Point(507, 255);
-            this.btn_update_tambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_update_tambah.Name = "btn_update_tambah";
-            this.btn_update_tambah.Size = new System.Drawing.Size(167, 50);
-            this.btn_update_tambah.TabIndex = 33;
-            this.btn_update_tambah.UseVisualStyleBackColor = true;
-            this.btn_update_tambah.Click += new System.EventHandler(this.btn_update_tambah_Click);
+            this.BtnUpdateTambah.Location = new System.Drawing.Point(507, 255);
+            this.BtnUpdateTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnUpdateTambah.Name = "BtnUpdateTambah";
+            this.BtnUpdateTambah.Size = new System.Drawing.Size(167, 50);
+            this.BtnUpdateTambah.TabIndex = 33;
+            this.BtnUpdateTambah.UseVisualStyleBackColor = true;
+            this.BtnUpdateTambah.Click += new System.EventHandler(this.BtnUpdate_tambah_Click);
             // 
-            // btn_reset_form
+            // BtnResetForm
             // 
-            this.btn_reset_form.Location = new System.Drawing.Point(507, 324);
-            this.btn_reset_form.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_reset_form.Name = "btn_reset_form";
-            this.btn_reset_form.Size = new System.Drawing.Size(167, 49);
-            this.btn_reset_form.TabIndex = 34;
-            this.btn_reset_form.Text = "Reset Form";
-            this.btn_reset_form.UseVisualStyleBackColor = true;
-            this.btn_reset_form.Click += new System.EventHandler(this.btn_reset_form_Click);
+            this.BtnResetForm.Location = new System.Drawing.Point(507, 324);
+            this.BtnResetForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnResetForm.Name = "BtnResetForm";
+            this.BtnResetForm.Size = new System.Drawing.Size(167, 49);
+            this.BtnResetForm.TabIndex = 34;
+            this.BtnResetForm.Text = "Reset Form";
+            this.BtnResetForm.UseVisualStyleBackColor = true;
+            this.BtnResetForm.Click += new System.EventHandler(this.BtnResetForm_Click);
             // 
-            // lbl_rpGaji
+            // LblRpGaji
             // 
-            this.lbl_rpGaji.AutoSize = true;
-            this.lbl_rpGaji.Location = new System.Drawing.Point(159, 200);
-            this.lbl_rpGaji.Name = "lbl_rpGaji";
-            this.lbl_rpGaji.Size = new System.Drawing.Size(16, 17);
-            this.lbl_rpGaji.TabIndex = 313;
-            this.lbl_rpGaji.Text = "  ";
+            this.LblRpGaji.AutoSize = true;
+            this.LblRpGaji.Location = new System.Drawing.Point(159, 200);
+            this.LblRpGaji.Name = "LblRpGaji";
+            this.LblRpGaji.Size = new System.Drawing.Size(16, 17);
+            this.LblRpGaji.TabIndex = 313;
+            this.LblRpGaji.Text = "  ";
             // 
-            // lbl_rpTunjangan
+            // LblRpTunjangan
             // 
-            this.lbl_rpTunjangan.AutoSize = true;
-            this.lbl_rpTunjangan.Location = new System.Drawing.Point(159, 257);
-            this.lbl_rpTunjangan.Name = "lbl_rpTunjangan";
-            this.lbl_rpTunjangan.Size = new System.Drawing.Size(16, 17);
-            this.lbl_rpTunjangan.TabIndex = 314;
-            this.lbl_rpTunjangan.Text = "  ";
+            this.LblRpTunjangan.AutoSize = true;
+            this.LblRpTunjangan.Location = new System.Drawing.Point(159, 257);
+            this.LblRpTunjangan.Name = "LblRpTunjangan";
+            this.LblRpTunjangan.Size = new System.Drawing.Size(16, 17);
+            this.LblRpTunjangan.TabIndex = 314;
+            this.LblRpTunjangan.Text = "  ";
             // 
             // TambahUpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 573);
-            this.Controls.Add(this.lbl_rpTunjangan);
-            this.Controls.Add(this.lbl_rpGaji);
-            this.Controls.Add(this.btn_reset_form);
-            this.Controls.Add(this.btn_update_tambah);
-            this.Controls.Add(this.dt_tgl_lahir);
-            this.Controls.Add(this.txt_tunjangan);
-            this.Controls.Add(this.btn_upload_foto);
-            this.Controls.Add(this.pb_foto);
-            this.Controls.Add(this.rtb_alamat);
-            this.Controls.Add(this.txt_lokasi);
-            this.Controls.Add(this.txt_bpjs);
-            this.Controls.Add(this.txt_npwp);
-            this.Controls.Add(this.cb_jk);
-            this.Controls.Add(this.cb_departemen);
-            this.Controls.Add(this.cb_jabatan);
-            this.Controls.Add(this.cb_golongan);
-            this.Controls.Add(this.txt_norek);
-            this.Controls.Add(this.txt_gaji);
-            this.Controls.Add(this.txt_nama);
-            this.Controls.Add(this.lbl_lokasi);
-            this.Controls.Add(this.lbl_bpjs);
-            this.Controls.Add(this.lbl_npwp);
-            this.Controls.Add(this.lbl_norek);
-            this.Controls.Add(this.lbl_alamat);
-            this.Controls.Add(this.lbl_jk);
-            this.Controls.Add(this.lbl_tgl_lahir);
-            this.Controls.Add(this.lbl_tunjangan);
-            this.Controls.Add(this.lbl_gaji);
-            this.Controls.Add(this.lbl_departemen);
-            this.Controls.Add(this.lbl_jabatan);
-            this.Controls.Add(this.lbl_golongan);
-            this.Controls.Add(this.lbl_nama);
+            this.Controls.Add(this.LblRpTunjangan);
+            this.Controls.Add(this.LblRpGaji);
+            this.Controls.Add(this.BtnResetForm);
+            this.Controls.Add(this.BtnUpdateTambah);
+            this.Controls.Add(this.DtTglLahir);
+            this.Controls.Add(this.TxtTunjangan);
+            this.Controls.Add(this.BtnUploadFoto);
+            this.Controls.Add(this.PbFoto);
+            this.Controls.Add(this.RtbAlamat);
+            this.Controls.Add(this.TxtLokasi);
+            this.Controls.Add(this.TxtBPJS);
+            this.Controls.Add(this.TxtNPWP);
+            this.Controls.Add(this.CbJK);
+            this.Controls.Add(this.CbDepartemen);
+            this.Controls.Add(this.CbJabatan);
+            this.Controls.Add(this.CbGolongan);
+            this.Controls.Add(this.TxtNorek);
+            this.Controls.Add(this.TxtGaji);
+            this.Controls.Add(this.TxtNama);
+            this.Controls.Add(this.LblLokasi);
+            this.Controls.Add(this.LblBPJS);
+            this.Controls.Add(this.LblNPWP);
+            this.Controls.Add(this.LblNorek);
+            this.Controls.Add(this.LblAlamat);
+            this.Controls.Add(this.LblJk);
+            this.Controls.Add(this.LblTglLahir);
+            this.Controls.Add(this.LblTunjangan);
+            this.Controls.Add(this.LblGaji);
+            this.Controls.Add(this.LblDepartemen);
+            this.Controls.Add(this.LblJabatan);
+            this.Controls.Add(this.LblGolongan);
+            this.Controls.Add(this.LblNama);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TambahUpdateForm";
             this.Text = "TambahUpdateForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TambahUpdateForm_FormClosed);
+            ((System.ComponentModel.ISupportInitialize)(this.PbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,37 +405,37 @@ namespace emado_shawarma_nf
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_nama;
-        private System.Windows.Forms.Label lbl_golongan;
-        private System.Windows.Forms.Label lbl_departemen;
-        private System.Windows.Forms.Label lbl_gaji;
-        private System.Windows.Forms.Label lbl_tgl_lahir;
-        private System.Windows.Forms.Label lbl_jk;
-        private System.Windows.Forms.Label lbl_tunjangan;
-        private System.Windows.Forms.Label lbl_jabatan;
-        private System.Windows.Forms.Label lbl_alamat;
-        private System.Windows.Forms.Label lbl_norek;
-        private System.Windows.Forms.Label lbl_npwp;
-        private System.Windows.Forms.Label lbl_bpjs;
-        private System.Windows.Forms.Label lbl_lokasi;
-        private System.Windows.Forms.TextBox txt_nama;
-        private System.Windows.Forms.TextBox txt_gaji;
-        private System.Windows.Forms.TextBox txt_norek;
-        private System.Windows.Forms.ComboBox cb_golongan;
-        private System.Windows.Forms.ComboBox cb_jabatan;
-        private System.Windows.Forms.ComboBox cb_departemen;
-        private System.Windows.Forms.ComboBox cb_jk;
-        private System.Windows.Forms.TextBox txt_npwp;
-        private System.Windows.Forms.TextBox txt_bpjs;
-        private System.Windows.Forms.TextBox txt_lokasi;
-        private System.Windows.Forms.RichTextBox rtb_alamat;
-        private System.Windows.Forms.PictureBox pb_foto;
-        private System.Windows.Forms.Button btn_upload_foto;
-        private System.Windows.Forms.TextBox txt_tunjangan;
-        private System.Windows.Forms.DateTimePicker dt_tgl_lahir;
-        private System.Windows.Forms.Button btn_update_tambah;
-        private System.Windows.Forms.Button btn_reset_form;
-        private System.Windows.Forms.Label lbl_rpGaji;
-        private System.Windows.Forms.Label lbl_rpTunjangan;
+        private System.Windows.Forms.Label LblNama;
+        private System.Windows.Forms.Label LblGolongan;
+        private System.Windows.Forms.Label LblDepartemen;
+        private System.Windows.Forms.Label LblGaji;
+        private System.Windows.Forms.Label LblTglLahir;
+        private System.Windows.Forms.Label LblJk;
+        private System.Windows.Forms.Label LblTunjangan;
+        private System.Windows.Forms.Label LblJabatan;
+        private System.Windows.Forms.Label LblAlamat;
+        private System.Windows.Forms.Label LblNorek;
+        private System.Windows.Forms.Label LblNPWP;
+        private System.Windows.Forms.Label LblBPJS;
+        private System.Windows.Forms.Label LblLokasi;
+        private System.Windows.Forms.TextBox TxtNama;
+        private System.Windows.Forms.TextBox TxtGaji;
+        private System.Windows.Forms.TextBox TxtNorek;
+        private System.Windows.Forms.ComboBox CbGolongan;
+        private System.Windows.Forms.ComboBox CbJabatan;
+        private System.Windows.Forms.ComboBox CbDepartemen;
+        private System.Windows.Forms.ComboBox CbJK;
+        private System.Windows.Forms.TextBox TxtNPWP;
+        private System.Windows.Forms.TextBox TxtBPJS;
+        private System.Windows.Forms.TextBox TxtLokasi;
+        private System.Windows.Forms.RichTextBox RtbAlamat;
+        private System.Windows.Forms.PictureBox PbFoto;
+        private System.Windows.Forms.Button BtnUploadFoto;
+        private System.Windows.Forms.TextBox TxtTunjangan;
+        private System.Windows.Forms.DateTimePicker DtTglLahir;
+        private System.Windows.Forms.Button BtnUpdateTambah;
+        private System.Windows.Forms.Button BtnResetForm;
+        private System.Windows.Forms.Label LblRpGaji;
+        private System.Windows.Forms.Label LblRpTunjangan;
     }
 }
