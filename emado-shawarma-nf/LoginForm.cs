@@ -5,13 +5,12 @@ namespace emado_shawarma_nf
 {
     public partial class LoginForm : Form
     {
-        private string username, password;
         private TableForm tableForm;
 
-        private void btn_login_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
-            username = txt_username.Text;
-            password = txt_password.Text;
+            string username = TxtUsername.Text;
+            string password = TxtPassword.Text;
 
             //username dan password harus admin atau tidak kosong
             if (username == "" || password == "")
@@ -40,13 +39,6 @@ namespace emado_shawarma_nf
         public LoginForm()
         {
             InitializeComponent();
-            username = password = "";
-            FormClosed += LoginForm_FormClosed;
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)

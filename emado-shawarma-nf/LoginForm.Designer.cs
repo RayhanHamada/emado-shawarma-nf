@@ -29,73 +29,73 @@ namespace emado_shawarma_nf
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_username = new System.Windows.Forms.Label();
-            this.lbl_password = new System.Windows.Forms.Label();
-            this.txt_username = new System.Windows.Forms.TextBox();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.btn_login = new System.Windows.Forms.Button();
+            this.LblUsername = new System.Windows.Forms.Label();
+            this.LblPassword = new System.Windows.Forms.Label();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.BtnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbl_username
+            // LblUsername
             // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.Location = new System.Drawing.Point(42, 31);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(73, 17);
-            this.lbl_username.TabIndex = 10;
-            this.lbl_username.Text = "Username";
+            this.LblUsername.AutoSize = true;
+            this.LblUsername.Location = new System.Drawing.Point(42, 31);
+            this.LblUsername.Name = "LblUsername";
+            this.LblUsername.Size = new System.Drawing.Size(73, 17);
+            this.LblUsername.TabIndex = 10;
+            this.LblUsername.Text = "Username";
             // 
-            // lbl_password
+            // LblPassword
             // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(42, 82);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(69, 17);
-            this.lbl_password.TabIndex = 11;
-            this.lbl_password.Text = "Password";
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Location = new System.Drawing.Point(42, 82);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(69, 17);
+            this.LblPassword.TabIndex = 11;
+            this.LblPassword.Text = "Password";
             // 
-            // txt_username
+            // TxtUsername
             // 
-            this.txt_username.Location = new System.Drawing.Point(42, 50);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(178, 22);
-            this.txt_username.TabIndex = 0;
+            this.TxtUsername.Location = new System.Drawing.Point(42, 50);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(178, 22);
+            this.TxtUsername.TabIndex = 0;
             // 
-            // txt_password
+            // TxtPassword
             // 
-            this.txt_password.Location = new System.Drawing.Point(42, 100);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
-            this.txt_password.Size = new System.Drawing.Size(178, 22);
-            this.txt_password.TabIndex = 1;
+            this.TxtPassword.Location = new System.Drawing.Point(42, 100);
+            this.TxtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
+            this.TxtPassword.Size = new System.Drawing.Size(178, 22);
+            this.TxtPassword.TabIndex = 1;
             // 
-            // btn_login
+            // BtnLogin
             // 
-            this.btn_login.Location = new System.Drawing.Point(42, 140);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(178, 32);
-            this.btn_login.TabIndex = 12;
-            this.btn_login.Text = "Login";
-            this.btn_login.UseVisualStyleBackColor = true;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            this.BtnLogin.Location = new System.Drawing.Point(42, 140);
+            this.BtnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(178, 32);
+            this.BtnLogin.TabIndex = 12;
+            this.BtnLogin.Text = "Login";
+            this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 294);
-            this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.txt_username);
-            this.Controls.Add(this.lbl_password);
-            this.Controls.Add(this.lbl_username);
+            this.ClientSize = new System.Drawing.Size(355, 285);
+            this.Controls.Add(this.BtnLogin);
+            this.Controls.Add(this.TxtPassword);
+            this.Controls.Add(this.TxtUsername);
+            this.Controls.Add(this.LblPassword);
+            this.Controls.Add(this.LblUsername);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.Text = "Login Emado HRIS";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,11 +103,11 @@ namespace emado_shawarma_nf
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_username;
-        private System.Windows.Forms.Label lbl_password;
-        private System.Windows.Forms.TextBox txt_username;
-        private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Label LblUsername;
+        private System.Windows.Forms.Label LblPassword;
+        private System.Windows.Forms.TextBox TxtUsername;
+        private System.Windows.Forms.TextBox TxtPassword;
+        private System.Windows.Forms.Button BtnLogin;
     }
 }
 
