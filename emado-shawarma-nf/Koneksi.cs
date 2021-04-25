@@ -8,43 +8,41 @@ namespace emado_shawarma_nf
 {
     class Koneksi
     {
-        public static SQLiteConnection Conn;
+        public static SQLiteConnection Conn { get; set; }
         public static DataTable Table { get; set; }
-        private static readonly string AppDir = AppDomain.CurrentDomain.BaseDirectory;
-        private readonly string DBPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\emado_shawarma";
 
         public Koneksi()
         {
             try
             {
+                string dbPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\emado_shawarma";
+
                 // cek apakah di folder app ini sudah ada database emado_shawarma
-                if (!File.Exists($"{DBPath}\\emado_shawarma.sqlite"))
+                if (!File.Exists($"{dbPath}\\emado_shawarma.sqlite"))
                 {
-                    CreateDB(DBPath);
-                    
-                } else
+                    string AppDir = AppDomain.CurrentDomain.BaseDirectory;
+                    Directory.CreateDirectory(dbPath);
+                    SQLiteConnection.CreateFile($"{dbPath}\\emado_shawarma.sqlite");
+                    Conn = new SQLiteConnection($"Data Source={dbPath}\\emado_shawarma.sqlite; Version=3;");
+                    Conn.Open();
+
+                    string createTableCmd = File.ReadAllText($"{AppDir}\\db\\db_init.sql", System.Text.Encoding.UTF8);
+                    var cmd = new SQLiteCommand(createTableCmd, Conn);
+
+                    cmd.ExecuteNonQuery();
+                }
+                else
                 {
-                    Conn = new SQLiteConnection($"Data Source={DBPath}\\emado_shawarma.sqlite;Version=3;");
+                    Conn = new SQLiteConnection($"Data Source={dbPath}\\emado_shawarma.sqlite;Version=3;");
                     Connect();
                 }
 
-                Conn.StateChange += Conn_StateChange;
                 Table = new DataTable();
-            } catch 
-            {
-                
             }
-        }
+            catch
+            {
 
-        private void CreateDB(string dbPath)
-        {
-            Directory.CreateDirectory(dbPath);
-            SQLiteConnection.CreateFile($"{dbPath}\\emado_shawarma.sqlite");
-            var createTableCmd = File.ReadAllText($"{AppDir}\\db\\db_init.sql", System.Text.Encoding.UTF8);
-            Conn = new SQLiteConnection($"Data Source={dbPath}\\emado_shawarma.sqlite; Version=3;");
-            Conn.Open();
-            var cmd = new SQLiteCommand(createTableCmd, Conn);
-            cmd.ExecuteNonQuery();
+            }
         }
 
         public static void Connect()
@@ -165,7 +163,7 @@ namespace emado_shawarma_nf
                 $"WHERE id = {k.Id}";
 
             var cmd = new SQLiteCommand(query, Conn);
-            var affected = cmd.ExecuteNonQuery();
+            int affected = cmd.ExecuteNonQuery();
             RefreshTable();
 
             return affected > 0;
@@ -184,7 +182,7 @@ namespace emado_shawarma_nf
                 "jenis_kelamin, alamat, no_rek, no_npwp, no_bpjs, lokasi, url_foto" +
                 $" FROM tbl_karyawan WHERE id = '{id}'", Conn);
 
-            var result = cmd.ExecuteReader();
+            SQLiteDataReader result = cmd.ExecuteReader();
             var k = new Karyawan();
 
             result.Read();
@@ -197,7 +195,7 @@ namespace emado_shawarma_nf
             k.Gaji = result.GetInt32(5);
             k.Tunjangan = result.GetInt32(6);
             k.TglLahir = DateTime.ParseExact(result.GetString(7),
-                "yyyy-MM-dd", 
+                "yyyy-MM-dd",
                 System.Globalization.CultureInfo.InvariantCulture);
             k.JenisKelamin = result.GetString(8);
             k.Alamat = result.GetString(9);
@@ -251,11 +249,6 @@ namespace emado_shawarma_nf
             RefreshTable();
 
             return result > 0;
-        }
-
-        private static void Conn_StateChange(object sender, StateChangeEventArgs e)
-        {
-
         }
     }
 }
