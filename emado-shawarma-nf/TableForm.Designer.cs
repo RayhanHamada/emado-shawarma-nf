@@ -38,6 +38,7 @@ namespace emado_shawarma_nf
             this.ms_shawarma = new System.Windows.Forms.MenuStrip();
             this.TSMFile = new System.Windows.Forms.ToolStripMenuItem();
             this.MiExportExcel = new System.Windows.Forms.ToolStripMenuItem();
+            this.LblCari = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgKaryawan)).BeginInit();
             this.ms_shawarma.SuspendLayout();
             this.SuspendLayout();
@@ -56,10 +57,10 @@ namespace emado_shawarma_nf
             // BtnRefresh
             // 
             this.BtnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnRefresh.Location = new System.Drawing.Point(1016, 46);
+            this.BtnRefresh.Location = new System.Drawing.Point(1016, 32);
             this.BtnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnRefresh.Name = "BtnRefresh";
-            this.BtnRefresh.Size = new System.Drawing.Size(94, 23);
+            this.BtnRefresh.Size = new System.Drawing.Size(94, 37);
             this.BtnRefresh.TabIndex = 1;
             this.BtnRefresh.Text = "Refresh";
             this.BtnRefresh.UseVisualStyleBackColor = true;
@@ -106,7 +107,7 @@ namespace emado_shawarma_nf
             // 
             // TxtCari
             // 
-            this.TxtCari.Location = new System.Drawing.Point(23, 48);
+            this.TxtCari.Location = new System.Drawing.Point(220, 48);
             this.TxtCari.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtCari.Name = "TxtCari";
             this.TxtCari.Size = new System.Drawing.Size(232, 22);
@@ -129,7 +130,7 @@ namespace emado_shawarma_nf
             this.TSMFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MiExportExcel});
             this.TSMFile.Name = "TSMFile";
-            this.TSMFile.Size = new System.Drawing.Size(46, 24);
+            this.TSMFile.Size = new System.Drawing.Size(46, 26);
             this.TSMFile.Text = "File";
             // 
             // MiExportExcel
@@ -139,12 +140,22 @@ namespace emado_shawarma_nf
             this.MiExportExcel.Text = "Export Database To Excel";
             this.MiExportExcel.Click += new System.EventHandler(this.Mi_exportExcel_Click);
             // 
+            // LblCari
+            // 
+            this.LblCari.AutoSize = true;
+            this.LblCari.Location = new System.Drawing.Point(23, 52);
+            this.LblCari.Name = "LblCari";
+            this.LblCari.Size = new System.Drawing.Size(195, 17);
+            this.LblCari.TabIndex = 5;
+            this.LblCari.Text = "Cari User Berdasarkan nama:";
+            // 
             // TableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1131, 538);
+            this.Controls.Add(this.LblCari);
             this.Controls.Add(this.TxtCari);
             this.Controls.Add(this.DgKaryawan);
             this.Controls.Add(this.BtnRefresh);
@@ -174,5 +185,6 @@ namespace emado_shawarma_nf
         private System.Windows.Forms.MenuStrip ms_shawarma;
         private System.Windows.Forms.ToolStripMenuItem TSMFile;
         private System.Windows.Forms.ToolStripMenuItem MiExportExcel;
+        private System.Windows.Forms.Label LblCari;
     }
 }
