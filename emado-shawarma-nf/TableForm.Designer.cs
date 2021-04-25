@@ -29,60 +29,60 @@ namespace emado_shawarma_nf
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_tambah = new System.Windows.Forms.Button();
-            this.btn_refresh = new System.Windows.Forms.Button();
-            this.dg_karyawan = new System.Windows.Forms.DataGridView();
+            this.BtnTambah = new System.Windows.Forms.Button();
+            this.BtnRefresh = new System.Windows.Forms.Button();
+            this.DgKaryawan = new System.Windows.Forms.DataGridView();
             this.col_hapus = new System.Windows.Forms.DataGridViewButtonColumn();
             this.col_update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.txt_cari = new System.Windows.Forms.TextBox();
+            this.TxtCari = new System.Windows.Forms.TextBox();
             this.ms_shawarma = new System.Windows.Forms.MenuStrip();
-            this.file = new System.Windows.Forms.ToolStripMenuItem();
-            this.mi_exportExcel = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dg_karyawan)).BeginInit();
+            this.TSMFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.MiExportExcel = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.DgKaryawan)).BeginInit();
             this.ms_shawarma.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_tambah
+            // BtnTambah
             // 
-            this.btn_tambah.Location = new System.Drawing.Point(23, 410);
-            this.btn_tambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_tambah.Name = "btn_tambah";
-            this.btn_tambah.Size = new System.Drawing.Size(241, 63);
-            this.btn_tambah.TabIndex = 0;
-            this.btn_tambah.Text = "Tambah Karyawan";
-            this.btn_tambah.UseVisualStyleBackColor = true;
-            this.btn_tambah.Click += new System.EventHandler(this.btn_tambah_Click);
+            this.BtnTambah.Location = new System.Drawing.Point(23, 410);
+            this.BtnTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnTambah.Name = "BtnTambah";
+            this.BtnTambah.Size = new System.Drawing.Size(241, 63);
+            this.BtnTambah.TabIndex = 0;
+            this.BtnTambah.Text = "Tambah Karyawan";
+            this.BtnTambah.UseVisualStyleBackColor = true;
+            this.BtnTambah.Click += new System.EventHandler(this.BtnTambah_Click);
             // 
-            // btn_refresh
+            // BtnRefresh
             // 
-            this.btn_refresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_refresh.Location = new System.Drawing.Point(1016, 46);
-            this.btn_refresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(94, 23);
-            this.btn_refresh.TabIndex = 1;
-            this.btn_refresh.Text = "Refresh";
-            this.btn_refresh.UseVisualStyleBackColor = true;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
+            this.BtnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnRefresh.Location = new System.Drawing.Point(1016, 46);
+            this.BtnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnRefresh.Name = "BtnRefresh";
+            this.BtnRefresh.Size = new System.Drawing.Size(94, 23);
+            this.BtnRefresh.TabIndex = 1;
+            this.BtnRefresh.Text = "Refresh";
+            this.BtnRefresh.UseVisualStyleBackColor = true;
+            this.BtnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
-            // dg_karyawan
+            // DgKaryawan
             // 
-            this.dg_karyawan.AllowUserToAddRows = false;
-            this.dg_karyawan.AllowUserToDeleteRows = false;
-            this.dg_karyawan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DgKaryawan.AllowUserToAddRows = false;
+            this.DgKaryawan.AllowUserToDeleteRows = false;
+            this.DgKaryawan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dg_karyawan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_karyawan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgKaryawan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgKaryawan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_hapus,
             this.col_update});
-            this.dg_karyawan.Location = new System.Drawing.Point(23, 74);
-            this.dg_karyawan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dg_karyawan.Name = "dg_karyawan";
-            this.dg_karyawan.RowHeadersWidth = 51;
-            this.dg_karyawan.RowTemplate.Height = 29;
-            this.dg_karyawan.Size = new System.Drawing.Size(1087, 330);
-            this.dg_karyawan.TabIndex = 2;
-            this.dg_karyawan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_karyawan_CellContentClick);
+            this.DgKaryawan.Location = new System.Drawing.Point(23, 74);
+            this.DgKaryawan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DgKaryawan.Name = "DgKaryawan";
+            this.DgKaryawan.RowHeadersWidth = 51;
+            this.DgKaryawan.RowTemplate.Height = 29;
+            this.DgKaryawan.Size = new System.Drawing.Size(1087, 330);
+            this.DgKaryawan.TabIndex = 2;
+            this.DgKaryawan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgKaryawan_CellContentClick);
             // 
             // col_hapus
             // 
@@ -104,40 +104,40 @@ namespace emado_shawarma_nf
             this.col_update.UseColumnTextForButtonValue = true;
             this.col_update.Width = 75;
             // 
-            // txt_cari
+            // TxtCari
             // 
-            this.txt_cari.Location = new System.Drawing.Point(23, 48);
-            this.txt_cari.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_cari.Name = "txt_cari";
-            this.txt_cari.Size = new System.Drawing.Size(232, 22);
-            this.txt_cari.TabIndex = 3;
-            this.txt_cari.TextChanged += new System.EventHandler(this.txt_cari_TextChanged);
+            this.TxtCari.Location = new System.Drawing.Point(23, 48);
+            this.TxtCari.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtCari.Name = "TxtCari";
+            this.TxtCari.Size = new System.Drawing.Size(232, 22);
+            this.TxtCari.TabIndex = 3;
+            this.TxtCari.TextChanged += new System.EventHandler(this.TxtCari_TextChanged);
             // 
             // ms_shawarma
             // 
             this.ms_shawarma.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ms_shawarma.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.file});
+            this.TSMFile});
             this.ms_shawarma.Location = new System.Drawing.Point(0, 0);
             this.ms_shawarma.Name = "ms_shawarma";
             this.ms_shawarma.Size = new System.Drawing.Size(1131, 28);
             this.ms_shawarma.TabIndex = 4;
             this.ms_shawarma.Text = "menuStrip1";
             // 
-            // file
+            // TSMFile
             // 
-            this.file.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mi_exportExcel});
-            this.file.Name = "file";
-            this.file.Size = new System.Drawing.Size(46, 24);
-            this.file.Text = "File";
+            this.TSMFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MiExportExcel});
+            this.TSMFile.Name = "TSMFile";
+            this.TSMFile.Size = new System.Drawing.Size(46, 24);
+            this.TSMFile.Text = "File";
             // 
-            // mi_exportExcel
+            // MiExportExcel
             // 
-            this.mi_exportExcel.Name = "mi_exportExcel";
-            this.mi_exportExcel.Size = new System.Drawing.Size(260, 26);
-            this.mi_exportExcel.Text = "Export Database To Excel";
-            this.mi_exportExcel.Click += new System.EventHandler(this.Mi_exportExcel_Click);
+            this.MiExportExcel.Name = "MiExportExcel";
+            this.MiExportExcel.Size = new System.Drawing.Size(260, 26);
+            this.MiExportExcel.Text = "Export Database To Excel";
+            this.MiExportExcel.Click += new System.EventHandler(this.Mi_exportExcel_Click);
             // 
             // TableForm
             // 
@@ -145,17 +145,17 @@ namespace emado_shawarma_nf
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1131, 538);
-            this.Controls.Add(this.txt_cari);
-            this.Controls.Add(this.dg_karyawan);
-            this.Controls.Add(this.btn_refresh);
-            this.Controls.Add(this.btn_tambah);
+            this.Controls.Add(this.TxtCari);
+            this.Controls.Add(this.DgKaryawan);
+            this.Controls.Add(this.BtnRefresh);
+            this.Controls.Add(this.BtnTambah);
             this.Controls.Add(this.ms_shawarma);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TableForm";
             this.Text = "Tabel";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TableForm_FormClosed);
             this.Load += new System.EventHandler(this.TableForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dg_karyawan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgKaryawan)).EndInit();
             this.ms_shawarma.ResumeLayout(false);
             this.ms_shawarma.PerformLayout();
             this.ResumeLayout(false);
@@ -165,14 +165,14 @@ namespace emado_shawarma_nf
 
         #endregion
 
-        private System.Windows.Forms.Button btn_tambah;
-        private System.Windows.Forms.Button btn_refresh;
-        private System.Windows.Forms.DataGridView dg_karyawan;
-        private System.Windows.Forms.TextBox txt_cari;
+        private System.Windows.Forms.Button BtnTambah;
+        private System.Windows.Forms.Button BtnRefresh;
+        private System.Windows.Forms.DataGridView DgKaryawan;
+        private System.Windows.Forms.TextBox TxtCari;
         private System.Windows.Forms.DataGridViewButtonColumn col_hapus;
         private System.Windows.Forms.DataGridViewButtonColumn col_update;
         private System.Windows.Forms.MenuStrip ms_shawarma;
-        private System.Windows.Forms.ToolStripMenuItem file;
-        private System.Windows.Forms.ToolStripMenuItem mi_exportExcel;
+        private System.Windows.Forms.ToolStripMenuItem TSMFile;
+        private System.Windows.Forms.ToolStripMenuItem MiExportExcel;
     }
 }
